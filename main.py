@@ -1,6 +1,89 @@
-def factorial(n):
-  if n == 0:
-    return 1
-  else:
-    return n * factorial(n - 1)
-print(factorial(5))
+dict1 = {
+  "911":2020,
+  "A-Yo" :2016,
+  "Alejandro" :2009,
+  "Alice" :2020,
+  "Always Remember Us This Way" :2018,
+  "Americano" :2011,
+  "Angel Down" :2016,
+  "Applause" :2013,
+  "Artpop" :2013,
+  "Aura" :2013,
+  "Babylon" :2020,
+  "Bad Kids" :2011,
+  "Bad Romance": 2009,
+  "Beautiful, Dirty, Rich" :2008,
+  "Black Jesus Amen Fashion" :2011,
+  "Bloody Mary" :2011,
+  "Born This Way" :2011,
+  "Boys Boys Boys" :2008,
+  "Chromatica I" :2020,
+  "Come To Mama" :2016,
+  "Dance in the Dark" :2009,
+  "Dancin In Circles": 2016,
+  "Diamond Heart": 2016,
+  "Do What U Want":2013,
+  "Dope" :2013,
+  "Electric Chapel" :2011,
+  "Enigma" :2020,
+  "Fashion Of His Love" :2011,
+  "Free Woman" :2020,
+  "Fun Tonight" :2020,
+  "G.U.Y." :2013,
+  "Glitter & Grease": 2010,
+  "Government" :2011,
+  "Grigio Girls": 2016,
+  "Gypsy": 2013,
+  "Hair":2011,
+  "Heavy Metal Lover": 2011,
+  "Hey Girl" :2016,
+  "Highway Unicorn (Road to Love)" :2011,
+  "Ill Never Love Again" :2018,
+  "Jewels n Stuff" :2013,
+  "Joanne" :2016,
+  "John Wayne" :2016,
+  "Judas" :2011,
+  "Just Another Day": 2016,
+  "Just Dance" :2008,
+  "LoveGame" :2008,
+  "MANiCURE" :2013,
+  "Marry the Night" :2011,
+  "Mary Jane Holland" :2013,
+  "Million Reasons" :2016,
+  "Monster" :2009,
+  "Music To My Eyes" :2018,
+  "Paparazzi" :2008,
+  "Perfect Illusion" :2016,
+  "Plastic Doll" :2020,
+  "Poker Face" :2008,
+  "Princess Die" :2012,
+  "Rain On Me" :2020,
+  "Scheiße" :2011,
+  "Dreams" :2013,
+  "Shallow" :2018,
+  "Sine From Above" :2020,
+  "Sinner's Prayer" :2016,
+  "Sour Candy" :2020,
+  "Speechless" :2009,
+  "Stupid Love" :2020,
+  "Swine" :2013,
+  "Teeth" :2009,
+  "Telephone" :2009,
+  "The Cure" :2017,
+  "The Edge of Glory" :2011,
+  "Til It Happens To You" :2015,
+  "Venus" :2013,
+  "Why Did You Do That?" :2018,
+  "You and I" :2010,
+  "Youre All My Little Monsters": 2012
+}
+
+
+sorted_values = sorted(dict1.values()) # Sort the values
+sorted_dict = {}
+sorted_keys = sorted(dict1, key=dict1.get)  # [1, 3, 2]
+
+for w in sorted_keys:
+    sorted_dict[w] = dict1[w]
+
+print(sorted_dict)
