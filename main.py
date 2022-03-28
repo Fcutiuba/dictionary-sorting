@@ -86,4 +86,4 @@ sorted_keys = sorted(dict1, key=dict1.get)  # [1, 3, 2]
 for w in sorted_keys:
     sorted_dict[w] = dict1[w]
 
-print(sorted_dict + "stuff to change")
+print(sorted_dict)
